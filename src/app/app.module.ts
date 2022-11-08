@@ -8,18 +8,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
