@@ -14,7 +14,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { FormsModule } from '@angular/forms';
-
+import { YouTubePlayerModule } from "@angular/youtube-player";
 
 
 @NgModule({
@@ -32,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     HeroesRoutingModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    YouTubePlayerModule,
     
     
     

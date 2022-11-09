@@ -24,8 +24,20 @@
             <button (click)="volver()" mat-raised-button color="warn">
                 Volver
             </button>
-
-
+            <mat-divider></mat-divider>
+            <br>
+            <div >
+                
+            <youtube-player 
+            videoId= "{{ heroe.youtube_code }}"
+            suggestedQuality="highres"          
+            >
+            </youtube-player>
+                
+            </div>
+        </div>
+        <div>
+            
         </div>
 
     </div>

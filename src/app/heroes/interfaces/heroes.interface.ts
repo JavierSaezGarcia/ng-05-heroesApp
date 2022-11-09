@@ -6,6 +6,7 @@ export interface Heroe {
     first_appearance: string;
     characters:       string;
     alt_img?:         string; // "https://.... path a la imagen"src\assets\heroes
+    youtube_code?:    string;
 }
 
 export enum Publisher {

@@ -4,6 +4,8 @@ import { Heroe } from '../../interfaces/heroes.interface';
 import { HeroesService } from '../../services/heroes.service';
 import { switchMap } from 'rxjs';
 
+
+
 @Component({
   selector: 'app-heroe',
   templateUrl: './heroe.component.html',
@@ -12,16 +14,19 @@ import { switchMap } from 'rxjs';
     width: 100%;
     border-radius:5px;
   }
+ 
   `
   ]
 })
 export class HeroeComponent implements OnInit {
   heroe!: Heroe;
-
+  
   constructor( 
     private activateRoute: ActivatedRoute, 
     private heroesService:HeroesService,
-    private router: Router
+    private router: Router,
+    
+
     ) { }
 
   ngOnInit(): void {
@@ -34,5 +39,5 @@ export class HeroeComponent implements OnInit {
   volver(){
     this.router.navigate(['/heroes/listado']);
   }
-
+  
 }

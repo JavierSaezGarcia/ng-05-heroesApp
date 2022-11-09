@@ -10,10 +10,8 @@ import { Heroe } from '../../interfaces/heroes.interface';
   mat-card{ 
     border:2px solid #E0E0E0;
     margin-top:20px;
-    width:100%;
-    
-    height: auto; 
-    
+    width:100%;    
+    height: auto;     
   }
   
   `
