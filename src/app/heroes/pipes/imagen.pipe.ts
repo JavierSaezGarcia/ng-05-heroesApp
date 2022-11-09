@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from "@angular/core";
 import { Heroe } from "../interfaces/heroes.interface";
 
 @Pipe({
-  name: 'imagen'  
+  name: 'imagen'
+  //pure: false  // esto se ejecuta cada vez que angular haga algun cambio. Necesita muchos recursos. por defecto esta en true
 })
 export class ImagenPipe implements PipeTransform{
 

@@ -15,6 +15,7 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { FormsModule } from '@angular/forms';
 import { YouTubePlayerModule } from "@angular/youtube-player";
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { YouTubePlayerModule } from "@angular/youtube-player";
     HomeComponent,
     ListadoComponent,
     HeroeTarjetaComponent,
-    ImagenPipe
+    ImagenPipe,
+    ConfirmarComponent
     
   ],
   imports: [
