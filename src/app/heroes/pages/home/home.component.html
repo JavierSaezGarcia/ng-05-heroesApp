@@ -21,6 +21,7 @@
         </mat-nav-list>
    
     </mat-sidenav>
+    
     <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
@@ -28,7 +29,11 @@
         <span class="spacer">
 
         </span>
-        <button  mat-flat-button color="accent">
+        <div mat-card-title style="margin:20px 20px 0 0;">
+            <p *ngIf="auth.usuario"> {{saludo + auth.usuario}} </p>
+        </div>
+        
+        <button  mat-flat-button color="accent" (click)="logout()">
             Logout
         </button>
     </mat-toolbar-row>
